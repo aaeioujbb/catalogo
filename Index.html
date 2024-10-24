@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Libros Educativos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Libros Educativos</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="catalogo">
+        <h2>Libros Disponibles</h2>
+        <div class="libro">
+            <img src="https://via.placeholder.com/150" alt="Libro 1">
+            <h3>Introducción a la Programación</h3>
+            <p>Autor: John Doe</p>
+            <p>Precio: $20.00</p>
+            <button onclick="agregarAlCarrito('Introducción a la Programación', 20)">Agregar al carrito</button>
+        </div>
+
+        <div class="libro">
+            <img src="https://via.placeholder.com/150" alt="Libro 2">
+            <h3>Matemáticas para Todos</h3>
+            <p>Autor: Jane Smith</p>
+            <p>Precio: $25.00</p>
+            <button onclick="agregarAlCarrito('Matemáticas para Todos', 25)">Agregar al carrito</button>
+        </div>
+
+        <div class="libro">
+            <img src="https://via.placeholder.com/150" alt="Libro 3">
+            <h3>Historia del Mundo</h3>
+            <p>Autor: Carlos Martínez</p>
+            <p>Precio: $30.00</p>
+            <button onclick="agregarAlCarrito('Historia del Mundo', 30)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <section id="carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="lista-carrito"></ul>
+        <p id="total"></p>
+    </section>
+
+    <footer id="contacto">
+        <p>Contacto: contacto@catalogoeducativo.com</p>
+        <p>&copy; 2024 Catálogo Educativo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
